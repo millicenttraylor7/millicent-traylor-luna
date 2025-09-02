@@ -1,0 +1,58 @@
+body {
+  color: blueviolet; /* Example: a dark grey color */
+  background:linear-gradient(
+    90deg,
+  rgba(240,214,232),
+	rgba(233,194,221),
+	rgba(226,174,210),
+	rgba(219,154,199),
+	rgba(212,133,187)
+
+  );
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     text-align: center;
+       
+}
+#Experience li {
+  background-color:rgba(240,214,232) ;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 25px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  font-size: 18px;  
+}
+#Experience ul {
+  list-style-type: none;
+}
+
+#Connect ul {
+  list-style-type: none;
+}
+#Connect a {
+  color: coral;
+}
+#Connect a:hover{
+  color: gray;
+  text-decoration: underline;
+}
+
+section {
+  background-color: lavenderblush; /* Semi-transparent white */
+  border-radius: 100px;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+h1 {
+  color: blueviolet;
+  text-align: center;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  font-style: oblique;
+}
+h2 {
+  font-weight: 300;
+  font-style: oblique;
+  color: blue;
+  font-size: x-large;
+}
+
