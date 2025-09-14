@@ -13,27 +13,108 @@ body {
      text-align: center;
        
 }
-#Experience li {
-  background-color:rgba(240,214,232) ;
-  margin: 20px;
-  padding: 15px;
-  border-radius: 25px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
-  font-size: 18px;  
+a {
+        text-decoration: none;
 }
-#Experience ul {
-  list-style-type: none;
+nav {
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+nav a {
+  color: dark gray;  /* Or your preferred color */
+  text-decoration: none;
+  
+  /* Button-like styling */
+  padding: 10px 20px;
+  border: 2px solid blueviolet;
+  border-radius: 8px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+#Experience {
+  margin: 2rem 0;
+  padding-bottom: 60px;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.job {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.job-title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: blueviolet;
+}
+
+.job-date {
+  font-weight: bold;
+  color: blueviolet;
+  font-size: 0.9rem;
+}
+
+.job-description {
+  margin: 0;
+  color: blueviolet;
+  line-height: 1.4;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .job-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  
+  .job-date {
+    font-size: 0.8rem;
+  }
 }
 
 #Connect ul {
   list-style-type: none;
 }
-#Connect a {
-  color: coral;
-}
+
 #Connect a:hover{
   color: gray;
   text-decoration: underline;
+}
+#Connect ul {
+  display: flex;
+  justify-content: space-around;  /* or space-between */
+  align-items: center;
+  gap: 20px;
+}
+#Connect a {
+  color: coral;
+  text-decoration: none;
+  /* Button-like styling */
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  
+  /* Border styling - creates individual button borders */
+  border: 2px solid blueviolet;
+  display: inline-block;  /* Ensures each link is treated as a separate block */
 }
 
 section {
