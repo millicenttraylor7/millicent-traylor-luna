@@ -79,6 +79,15 @@ nav a {
 
 /* Responsive design for smaller screens */
 @media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  h1 {
+    font-size: smaller;
+    
+  }
   .job-header {
     flex-direction: column;
     align-items: flex-start;
@@ -87,6 +96,144 @@ nav a {
   
   .job-date {
     font-size: 0.8rem;
+  }
+}
+
+/* Media query for tablet devices (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 1.1rem;
+  }
+  
+  nav {
+    padding: 25px 40px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  nav a {
+    padding: 12px 18px;
+    font-size: 1rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin: 30px 0;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  section {
+    margin: 0 20px 40px 20px;
+    padding: 20px;
+  }
+  
+  .experience-container {
+    gap: 2rem;
+  }
+  
+  .job {
+    padding: 1.5rem;
+  }
+  
+  .job-title {
+    font-size: 1.3rem;
+  }
+  
+  #Connect ul {
+    gap: 30px;
+  }
+  
+  #Connect a {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+  }
+}
+
+/* Media query for desktop/large screens (1025px and above) */
+@media (min-width: 1025px) {
+  body {
+    font-size: 1.2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  nav {
+    padding: 30px 0;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  nav a {
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  nav a:hover {
+    background-color: blueviolet;
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    margin: 40px 0;
+  }
+  
+  h2 {
+    font-size: 2.2rem;
+  }
+  
+  section {
+    margin: 0 40px 50px 40px;
+    padding: 30px;
+  }
+  
+  .experience-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+  }
+  
+  .job {
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .job:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(138, 43, 226, 0.15);
+  }
+  
+  .job-title {
+    font-size: 1.4rem;
+  }
+  
+  .job-description {
+    font-size: 1rem;
+  }
+  
+  #Connect ul {
+    gap: 50px;
+    margin-top: 20px;
+  }
+  
+  #Connect a {
+    padding: 18px 35px;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  #Connect a:hover {
+    background-color: coral;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 127, 80, 0.3);
   }
 }
 
@@ -136,4 +283,3 @@ h2 {
   color: blue;
   font-size: x-large;
 }
-
