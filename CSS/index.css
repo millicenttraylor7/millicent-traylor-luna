@@ -261,6 +261,27 @@ h2 {
   color: blue;
   font-size: x-large;
 }
+.submit-btn  {
+  background-color: lavenderblush;
+  color:dark purple;
+  padding: 12px 30px;
+  border-radius: 0%;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background-color: grey;
+}
+
+/* Active (clicked) effect */
+.submit-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 8px peru;
+}
+  
+
 
 /* media query for mobile */
 @media (max-width: 600px) {
@@ -289,6 +310,27 @@ h2 {
     flex-direction: column;
     gap: 15px;
   }
+
+.submit-btn  {
+  background-color: lavenderblush;
+  color:dark grey;
+  padding: 12px 30px;
+  border-radius: 0%;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background-color: blueviolet;
+}
+
+/* Active (clicked) effect */
+.submit-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 8px peru;
+}
+  
 }
 
 /* Media query for tablet devices (601px to 1024px) */
