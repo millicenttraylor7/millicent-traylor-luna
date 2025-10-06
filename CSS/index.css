@@ -45,7 +45,7 @@ nav a {
   gap: 1.5rem;
 }
 
-#Skills ul {
+#Skills ul, #projects ul {
   display: grid; 
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* responsive grid */
   gap: 15px; /* spacing between items */
@@ -54,7 +54,7 @@ nav a {
   margin: 0;
 }
 
-#Skills li {
+#Skills li,#projects li {
   border: 2px solid blueviolet;
   padding: 10px;
   border-radius: 5px;
