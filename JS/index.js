@@ -108,7 +108,7 @@ messageForm.addEventListener("submit",function(event) {
   messagesList.appendChild(newMessage);
   
   // Clear form after submission
-  messageForm.reset();
+  messageForm.reset(); 
 });
 // Project Section
 document.addEventListener("DOMContentLoaded", () => {
