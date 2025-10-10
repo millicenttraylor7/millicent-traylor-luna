@@ -108,5 +108,33 @@ messageForm.addEventListener("submit",function(event) {
   messagesList.appendChild(newMessage);
   
   // Clear form after submission
-  messageForm.reset();
+  messageForm.reset(); 
+});
+// Project Section
+document.addEventListener("DOMContentLoaded", () => {
+  const projectSection = document.getElementById("projects");
+  const projectList = projectSection.querySelector("ul");
+
+  fetch("https://api.github.com/users/millicenttraylor7/repos")
+    .then(response => response.json())
+    .then(repos => {   
+      if (repos.length === 0) {
+        const message = document.createElement("li");
+        message.innerText = "No repositories found.";
+        projectList.appendChild(message);
+        return;
+      }
+
+      for (let i = 0; i < repos.length; i++) {
+        const project = document.createElement("li");
+        project.innerText = repos[i].name;
+        projectList.appendChild(project);
+      }
+    })
+    .catch(error => {
+      console.error("Error fetching repositories:", error);
+      const message = document.createElement("li");
+      message.innerText = "Failed to load projects. Please try again later.";
+      projectList.appendChild(message);
+    });
 });
